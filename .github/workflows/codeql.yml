@@ -100,6 +100,10 @@ jobs:
         echo '  make release'
         exit 1
 
+    - run: |
+        echo "java version"
+        java --version
+    
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
